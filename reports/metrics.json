@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "n_train": 3480,
+    "n_test": 870,
+    "home_pick_accuracy": 0.569
+  },
+  "best_xgb_params": {
+    "subsample": 0.9,
+    "reg_lambda": 1.0,
+    "n_estimators": 300,
+    "max_depth": 2,
+    "learning_rate": 0.02,
+    "colsample_bytree": 0.8
+  },
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.6713,
+      "roc_auc": 0.7149,
+      "log_loss": 0.6116,
+      "brier": 0.2119,
+      "brier_skill": 0.1358
+    },
+    "xgboost": {
+      "accuracy": 0.6575,
+      "roc_auc": 0.7152,
+      "log_loss": 0.6115,
+      "brier": 0.2119,
+      "brier_skill": 0.1358
+    }
+  },
+  "permutation_importance": {
+    "away_b2b": -0.0004,
+    "home_b2b": -0.0002,
+    "netrtg_diff": 0.0007,
+    "form_diff": 0.001,
+    "rest_diff": 0.0097,
+    "elo_diff": 0.1804
+  }
+}
